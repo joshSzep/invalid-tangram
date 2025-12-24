@@ -13,16 +13,38 @@ Invalid Tangram is a **shooter/puzzle game hybrid**. At its surface, it's a Gala
 - Enemies (tangrams) descend from the top
 - Player shoots upward to destroy enemies
 
+### The Player - An "Invalid Tangram"
+The player character is an **"invalid tangram"** - a shape composed of geometric pieces that *could* theoretically be arranged to form a square, but these are **not the standard 7 tangram pieces**. This makes the player visually distinct from all enemies and gives the game its name.
+
 ### Enemies
-- All enemies are **tangram shapes** (geometric puzzle pieces)
+- All enemies are composed of **standard tangram shapes** (the classic 7-piece dissection puzzle)
+- There are **multiple enemy types**, each with distinct **movement patterns**
 - Enemies come in **4 colors**: Yellow, Green, Blue, Red
 - When killed, enemies transform into **blocks** of the corresponding color
 - Blocks fall and stack at the bottom of the screen
 
+#### Standard Tangram Pieces
+The 7 standard tangram pieces used to construct enemies:
+- 2 large right triangles
+- 1 medium right triangle
+- 2 small right triangles
+- 1 square
+- 1 parallelogram
+
+Enemy designs are created by arranging these pieces into various configurations, each representing a different enemy type with unique behavior.
+
+### Enemy Editor
+The game includes an **enemy editor** for designing new enemy types:
+- Arrange standard tangram pieces to create enemy shapes
+- Define movement patterns and behaviors
+- Assign colors and other properties
+- Export designs for use in the game
+
 ### Block Matching & Power-ups
 - When **2 or more blocks of the same color** are touching, they form a group
 - The player can move on top of a matched group to **absorb** it
-- Absorbing blocks grants a **temporary power-up** based on the color:
+- Absorbing blocks grants a **temporary power-up** based on the color
+- **Larger groups = stronger power-ups**: The more blocks in the absorbed group, the more powerful and longer lasting the effect
 
 | Color  | Power-up Effect           |
 |--------|---------------------------|
