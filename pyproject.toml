@@ -7,7 +7,10 @@ authors = [
     { name = "Joshua Szepietowski", email = "joshSzep@gmail.com" }
 ]
 requires-python = ">=3.13"
-dependencies = []
+dependencies = [
+    "moderngl>=5.12.0",
+    "pygame-ce>=2.5.6",
+]
 
 [project.scripts]
 invalid-tangram = "invalid_tangram:main"
@@ -15,3 +18,11 @@ invalid-tangram = "invalid_tangram:main"
 [build-system]
 requires = ["uv_build>=0.9.18,<0.10.0"]
 build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pre-commit>=4.5.1",
+    "pytest>=9.0.2",
+    "ruff>=0.14.10",
+    "ty>=0.0.6",
+]
